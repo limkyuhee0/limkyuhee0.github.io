@@ -1,15 +1,15 @@
-# main links
-main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+# # main links
+# main:
+#   - title: "Quick-Start Guide"
+#     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+# #   # - title: "About"
+#   #   url: https://mmistakes.github.io/minimal-mistakes/about/
+#   # - title: "Sample Posts"
+#   #   url: /year-archive/
+#   # - title: "Sample Collections"
+#   #   url: /collection-archive/
+#   # - title: "Sitemap"
+#   #   url: /sitemap/
 
 # main:
 #   #- title: "Home"
@@ -19,4 +19,17 @@ main:
 #   - title: "Category"
 #     url: "/categories/"
 #   - title: "Tags"
-#     url: /tags/
+# #     url: /tags/
+sidebar:
+  nav: "categories"
+docs:
+  - title: NLP
+    children:
+      - title: "AL"
+        url : "/categories/AL"
+
+# sidebar-category:
+#   # - title: "NLP"
+#   #   children:
+#   - title: "Active Learning"
+#     url: "/categories/AL/"
