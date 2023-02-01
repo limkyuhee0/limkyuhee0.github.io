@@ -11,22 +11,22 @@
 #   # - title: "Sitemap"
 #   #   url: /sitemap/
 
-# main:
-#   #- title: "Home"
-#   #  url: "/"
-#   - title: "Introduce"
-#     url: /about/
-#   - title: "Category"
-#     url: "/categories/"
-#   - title: "Tags"
-# #     url: /tags/
-sidebar:
-  nav: "categories"
-docs:
-  - title: NLP
-    children:
-      - title: "AL"
-        url : "/categories/AL"
+main:
+  #- title: "Home"
+  #  url: "/"
+  - title: "Introduce"
+    url: /about/
+  - title: "Category"
+    url: "/categories/"
+  - title: "Tags"
+    url: /tags/
+# sidebar:
+#   nav: "categories"
+# docs:
+#   - title: NLP
+#     children:
+#       - title: "AL"
+#         url : "/categories/AL"
 
 # sidebar-category:
 #   # - title: "NLP"
