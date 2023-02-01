@@ -15,7 +15,7 @@ tags:
 - 목적 : De-identifying Clinical Records
 - 모델 : Random Forest
 - 쿼리 기법 : uncertainty가 가장 높은 데이터, 가장 낮은 데이터, 그리고 랜덤하게 선택하는 기법
-***
+
 
 
 
