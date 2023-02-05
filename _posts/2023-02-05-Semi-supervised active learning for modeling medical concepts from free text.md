@@ -78,8 +78,14 @@ $argmax−\sum_{k=1}^K\sum_{y_i}p(y_i ,\theta_k |x_D , y_L )log\sum_{j=1}^K p(y_
 
 > MAP([https://decisionboundary.tistory.com/5](https://decisionboundary.tistory.com/5))
 >obs = 머리카락 길이
->- **MLE(Maximum Likelihood Estimation):** MLE는 남자에게서 해당 길이의 머리카락이 나올 확률 $P(obs | M)$과 여자에게서 해당 머리카락이 나올 확률 $P(obs | W)$을 비교해서 가장 확률이 큰, 즉 가능도가 가장 큰 성별을 선택합니다.
->- **MAP(Maximum A Posteriori):** MAP은 obs라는 머리카락이 발견되었는데 그 머리카락이 남자의 것일 확률 $P(M | obs)$, 그것이 여자 것일 확률 $P(W | obs)$를 비교해서 둘 중 큰 값을 갖는 성별을 선택하는 방법입니다. 즉, 사후확률(posterior prabability)를 최대화시키는 방법으로서 MAP에서 사후확률을 계산할 때 베이즈 정리가 이용됩니다!
+>- **MLE(Maximum Likelihood Estimation):** MLE는 남자에게서 해당 길이의 머리카락이 나올 확률 
+>$P(obs | M)$
+>과 여자에게서 해당 머리카락이 나올 확률 $P(obs | W)$을 비교해서 가장 확률이 큰, 즉 가능도가 가장 큰 성별을 선택합니다.
+>- **MAP(Maximum A Posteriori):** MAP은 obs라는 머리카락이 발견되었는데 그 머리카락이 남자의 것일 확률 
+>$P(M | obs)$, 
+>그것이 여자 것일 확률 
+>$P(W | obs)$
+>를 비교해서 둘 중 큰 값을 갖는 성별을 선택하는 방법입니다. 즉, 사후확률(posterior prabability)를 최대화시키는 방법으로서 MAP에서 사후확률을 계산할 때 베이즈 정리가 이용됩니다!
 
 
 기존 QBC에서의 KL Divergence 는 다음과 같다.
