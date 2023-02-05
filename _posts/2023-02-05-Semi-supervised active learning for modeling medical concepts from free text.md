@@ -59,13 +59,9 @@ p : 텍스트 분포
 p(Y=y,X=x, $\theta=\theta$) - $y$ : concept incidence, $x$ : input, $\theta$ : 모델(파라미터)
 
 라벨링할 데이터 $x_i$의 결정은 그 데이터 포인터 뿐만 아니라 다른 unlabeled data에까지 의존한다. $X_i, Y_i$ 쌍으로 존재하고 라벨링 되지 않은 데이터에서 $Y_i$ 는 없음
-
-$argmax_{i\in U} H(Y_i|x_D, y_L) - H(Y_i|\theta, x_D,y_L)$
-
+$argmax_{i\in U}H(Y_i|x_D, y_L)-H(Y_i|\theta$,$x_D$,$y_L)$
 위와 같은 최적화 문제로 정의할 수 있다. H는 엔트로피 값이고, D는 전체 데이터셋, L과 U는 각각 라벨링 된 데이터셋과 라벨링 되지 않은 데이터셋이다. $\theta$에 대한 계산을 위해 $\theta$를 K 개로(K개의 모델을 comittee로 활용한다는 뜻) 제한하면 다음과 같은 식과 동일해진다.
-
-$arg max −\sum_{k=1}^K\sum_{y_i} p(y_i ,\theta_k |x_D , y_L )log\sum_{j=1}^K  p(y_i ,θ_j |x_D , y_L ) + \sum_{k=1}^K\sum_{y_i} p(y_i ,\theta_k |x_D , y_L )log p(y_i |θ_k,x_D , y_L )$
-
+$argmax−\sum_{k=1}^K\sum_{y_i}p(y_i ,\theta_k |x_D , y_L )log\sum_{j=1}^K p(y_i ,θ_j |x_D , y_L ) + \sum_{k=1}^K\sum_{y_i} p(y_i ,\theta_k |x_D , y_L )log p(y_i |θ_k,x_D , y_L )$
 이는 conditional KL divergence에 의해
 
 ![image](https://user-images.githubusercontent.com/69342517/216835809-1d17fb97-4cc4-4389-bf7c-0bc50b5e8297.png)
@@ -96,7 +92,11 @@ $arg max −\sum_{k=1}^K\sum_{y_i} p(y_i ,\theta_k |x_D , y_L )log\sum_{j=1}^K  
 
 **가정**
 
-해당 연구에서 가정하는 분포는 $p(x_i|y_i,\theta)$이다. 이 분포는 임의적이기 때문에 다른 변수를 포함할 수 있다. 즉, 각각의 데이터쌍 (X,Y)는 독립적이다. 따라서 $p(y_i |θ_j , x_D , y_L )=p(y_i |θ_j , x_i )$와 $p(θ_k |x_D , y_L )=p(θ_j |x_U )$를 가정한다. 모델의 형태는 다음과 같다.
+해당 연구에서 가정하는 분포는 $p(x_i|y_i$,$\theta)$ 이다. 이 분포는 임의적이기 때문에 다른 변수를 포함할 수 있다. 즉, 각각의 데이터쌍 (X,Y)는 독립적이다. 따라서 
+$p(y_i |θ_j , x_D , y_L )=p(y_i |θ_j , x_i )$ 
+와 
+$p(θ_k |x_D , y_L )=p(θ_j |x_U )$ 
+를 가정한다. 모델의 형태는 다음과 같다.
 
 ![image](https://user-images.githubusercontent.com/69342517/216835830-529892e4-ff36-4a49-92e1-d65560c50613.png)
 
