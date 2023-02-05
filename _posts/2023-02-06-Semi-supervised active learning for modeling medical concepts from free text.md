@@ -1,5 +1,6 @@
 ---
 title: "[논문 리뷰] Semi-supervised active learning for modeling medical concepts from free text"
+use_math: true
 categories:
   - AL
 tags:
@@ -51,13 +52,13 @@ Y : incidence of particular concept of interest(라벨 말하는듯)
 
 X : text representation
 
-X_i, i < D; D : index set
+$X_i$, i < D; D : index set
 
 p : 텍스트 분포
 
-p(Y=y,X=x, 골뱅이=골뱅이) - y : concept incidence, x : input, 골뱅이 : 모델(파라미터)
+p(Y=y,X=x, $\theta=\theta$) - $y$ : concept incidence, $x$ : input, $\theta$ : 모델(파라미터)
 
-라벨링할 데이터 x_i의 결정은 그 데이터 포인터 뿐만 아니라 다른 unlabeled data에까지 의존한다. X_i, Y_i 쌍으로 존재하고 라벨링 되지 않은 데이터에서 Y_i 는 없음
+라벨링할 데이터 $x_i$의 결정은 그 데이터 포인터 뿐만 아니라 다른 unlabeled data에까지 의존한다. $X_i, Y_i$ 쌍으로 존재하고 라벨링 되지 않은 데이터에서 $Y_i$ 는 없음
 
 $argmax_{i\in U} H(Y_i|x_D, y_L) - H(Y_i|\theta, x_D,y_L)$
 
@@ -81,8 +82,8 @@ $arg max −\sum_{k=1}^K\sum_{y_i} p(y_i ,\theta_k |x_D , y_L )log\sum_{j=1}^K  
 
 > MAP([https://decisionboundary.tistory.com/5](https://decisionboundary.tistory.com/5))
 >obs = 머리카락 길이
->- **MLE(Maximum Likelihood Estimation):** MLE는 남자에게서 해당 길이의 머리카락이 나올 확률 P(obs | M)과 여자에게서 해당 머리카락이 나올 확률 P(obs | W)을 비교해서 가장 확률이 큰, 즉 가능도가 가장 큰 성별을 선택합니다.
->- **MAP(Maximum A Posteriori):** MAP은 obs라는 머리카락이 발견되었는데 그 머리카락이 남자의 것일 확률 P(M | obs), 그것이 여자 것일 확률 P(W | obs)를 비교해서 둘 중 큰 값을 갖는 성별을 선택하는 방법입니다. 즉, 사후확률(posterior prabability)를 최대화시키는 방법으로서 MAP에서 사후확률을 계산할 때 베이즈 정리가 이용됩니다!
+>- **MLE(Maximum Likelihood Estimation):** MLE는 남자에게서 해당 길이의 머리카락이 나올 확률 $P(obs | M)$과 여자에게서 해당 머리카락이 나올 확률 $P(obs | W)$을 비교해서 가장 확률이 큰, 즉 가능도가 가장 큰 성별을 선택합니다.
+>- **MAP(Maximum A Posteriori):** MAP은 obs라는 머리카락이 발견되었는데 그 머리카락이 남자의 것일 확률 $P(M | obs)$, 그것이 여자 것일 확률 $P(W | obs)$를 비교해서 둘 중 큰 값을 갖는 성별을 선택하는 방법입니다. 즉, 사후확률(posterior prabability)를 최대화시키는 방법으로서 MAP에서 사후확률을 계산할 때 베이즈 정리가 이용됩니다!
 
 
 기존 QBC에서의 KL Divergence 는 다음과 같다.
@@ -101,7 +102,7 @@ $arg max −\sum_{k=1}^K\sum_{y_i} p(y_i ,\theta_k |x_D , y_L )log\sum_{j=1}^K  
 
 ### 4.1. Aiming Model Descriptive Power
 
-x_U 중 query point는 가장 informative 한 데이터이기도 하지만 data distribution을 대표하는 데이터이기도 하다. 따라서 x_U는 데이터 분포에 대한 예측을 제공한다. test 데이터셋에 대한 정보가 있는 경우에 AL을 이용하여 test 데이터셋 분포를 파악하고, 이를 통해서 test 데이터셋과 train 데이터셋의 차이가 있을 때 발생하는 문제를 해결함으로써 test 데이터셋에 대해서도 좋은 결과를 낼 수 있다. 또한, 모델을 정제하는데에 활용할 수 있다. 대표적으로, 일반적인 데이터에 대해 학습한 모델을 특정 데이터에 모델링하는데 AL 이 도움을 줄 수 있다. 
+$x_U$ 중 query point는 가장 informative 한 데이터이기도 하지만 data distribution을 대표하는 데이터이기도 하다. 따라서 $x_U$는 데이터 분포에 대한 예측을 제공한다. test 데이터셋에 대한 정보가 있는 경우에 AL을 이용하여 test 데이터셋 분포를 파악하고, 이를 통해서 test 데이터셋과 train 데이터셋의 차이가 있을 때 발생하는 문제를 해결함으로써 test 데이터셋에 대해서도 좋은 결과를 낼 수 있다. 또한, 모델을 정제하는데에 활용할 수 있다. 대표적으로, 일반적인 데이터에 대해 학습한 모델을 특정 데이터에 모델링하는데 AL 이 도움을 줄 수 있다. 
 
 # 5. Experimental Evaluation
 
@@ -109,7 +110,7 @@ EMR 데이터셋을 이용하였고, 환자나 문서를 특정 증상에 따라
 
 ### 5.1. Representation and Datasets
 
-문장 단위로 작업하였고 따라서 X_i : sentence representation
+문장 단위로 작업하였고 따라서 $X_i$ : sentence representation
 
 6개의 medical concepts of heart disease 키워드가 포함된 문장을 활용하였고, 일부가 manual하게 라벨링되었다. 
 

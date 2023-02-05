@@ -1,11 +1,13 @@
 ---
 title: "[논문 리뷰] De-identifying health records by means of active learning"
+use_math: true
 categories:
   - AL
 tags:
   - AL
   - NLP
   - Medical Domain
+
 ---
 
 

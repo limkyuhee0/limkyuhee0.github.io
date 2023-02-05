@@ -1,5 +1,6 @@
 ---
 title: "[논문 리뷰] A comparative analysis of AL for biomedical text mining"
+use_math: true
 categories:
   - AL
 tags:
