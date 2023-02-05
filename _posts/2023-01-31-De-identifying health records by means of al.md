@@ -1,5 +1,5 @@
 ---
-title: "[논문 리뷰] De-identifying health records by means of active learning"
+title: "[논문 리뷰] De-identifying health records by means of active learning(2012)"
 use_math: true
 categories:
   - AL
@@ -12,7 +12,6 @@ tags:
 
 
 ***
-- Date : 2012
 - Dataset : Clinical Text Dataset(EMR)
 - 목적 : De-identifying Clinical Records
 - 모델 : Random Forest

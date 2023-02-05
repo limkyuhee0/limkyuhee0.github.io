@@ -1,5 +1,5 @@
 ---
-title: "[논문 리뷰] A comparative analysis of AL for biomedical text mining"
+title: "[논문 리뷰] A comparative analysis of AL for biomedical text mining(2021)"
 use_math: true
 categories:
   - AL

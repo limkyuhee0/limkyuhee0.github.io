@@ -1,5 +1,5 @@
 ---
-title: "[논문 리뷰] Semi-supervised active learning for modeling medical concepts from free text"
+title: "[논문 리뷰] Semi-supervised active learning for modeling medical concepts from free text(2007)"
 use_math: true
 categories:
   - AL
@@ -10,8 +10,7 @@ tags:
 ---
 
 
-***
-- Date : 2007
+
 
 
 # Abstract
