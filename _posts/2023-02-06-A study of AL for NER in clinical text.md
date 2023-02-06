@@ -105,3 +105,6 @@ uncertainty 기반의 방법은 모델의 성능에 좌우되기 때문에 문�
 3) passive learning 방법인 random sampling 도 활용한다. 
 
 ### 2.4. Evaluation
+기존 방법과 동일하게 testset에 대한 **F-measure**를 시각화하고, 기존 방법과 다르게 문장 내 단어에 따른 annotation 비용의 차이를 고려하기 위해 단어에 따른 F-measure도 시각화하였다. F-measure와 더불어 **ALC(Area under Curve)**값도 metric으로 이용하였다. 또한, 쿼리 방법의 특징을 고려하기 위해 총 문장 개수 대비 문장 내 엔티티의 개수에 따른 **entity count curve**와 라벨링 된 문장 개수 대비 문장 내 단어의 개수에 따른 **sentence length curve** 를 시각화하였다. 5-fold CV를 사용하여 평균값을 이용하였다. 
+
+# 3. Results
