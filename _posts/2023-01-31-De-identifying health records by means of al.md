@@ -1,5 +1,6 @@
 ---
 title: "[논문 리뷰] De-identifying health records by means of active learning(2012)"
+date : 2023-01-31
 use_math: true
 categories:
   - AL

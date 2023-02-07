@@ -1,5 +1,6 @@
 ---
 title: "[논문 리뷰] Semi-supervised active learning for modeling medical concepts from free text(2007)"
+date : 2023-02-05 04:00:00
 use_math: true
 categories:
   - AL

@@ -1,5 +1,6 @@
 ---
 title: "[논문 리뷰] A study of AL for NER in clinical text(2015) - ing"
+date : 2023-02-06
 use_math: true
 categories:
   - AL

@@ -1,5 +1,6 @@
 ---
 title: "[논문 리뷰] A comparative analysis of AL for biomedical text mining(2021)"
+date : 2023-02-01
 use_math: true
 categories:
   - AL

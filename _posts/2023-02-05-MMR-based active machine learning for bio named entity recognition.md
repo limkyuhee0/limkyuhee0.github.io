@@ -1,5 +1,6 @@
 ---
 title: "[논문 리뷰] MMR-based active machine learning for bio named entity recognition(2006)"
+date : 2023-02-05 10:43:00
 use_math: true
 categories:
   - AL
